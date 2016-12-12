@@ -1,4 +1,4 @@
-FROM node:7-alpine
+FROM node:7
 
 ENV NPM_CONFIG_LOGLEVEL warn
 
@@ -7,7 +7,6 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
-RUN apk add --no-cache make gcc g++ python
 COPY package.json /usr/src/app/
 RUN npm install
 
