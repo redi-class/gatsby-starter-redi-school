@@ -1,4 +1,5 @@
 FROM node:7
+MAINTAINER Tiago Henriques <trinosauro@gmail.com>
 
 ENV NPM_CONFIG_LOGLEVEL warn
 
