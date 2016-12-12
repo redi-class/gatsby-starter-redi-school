@@ -4,6 +4,7 @@
 import React from 'react'
 import Helmet from "react-helmet"
 import { config } from 'config'
+import 'css/styles.css'
 
 export default () => (
   <div>
@@ -17,9 +18,6 @@ export default () => (
     <h1>
       Hello World!
     </h1>
-    <p>Welcome to your new clean Gatsby site</p>
-    <footer>
-      Footer™ ©2016 Tiago Henriques
-    </footer>
+    <p className="yellow" >Welcome to your new clean Gatsby site</p>
   </div>
 )
