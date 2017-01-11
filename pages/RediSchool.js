@@ -31,7 +31,7 @@ export default () => (
         </Toolbar>
         <Banner
             align="center"
-            backgroundImage="https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg"
+            backgroundImage="https://placehold.it/960x412"
             >
             <Heading
                 level={2}
