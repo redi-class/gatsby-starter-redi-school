@@ -1,0 +1,21 @@
+#! /bin/bash
+
+echo "path"
+pwd
+echo
+
+echo "images"
+docker images
+echo
+
+echo "my image"
+img="docker images -q ultrmat/*"
+echo $($img)
+echo
+
+echo "**starting...**"
+cmd="docker run -it --publish 8000:8000 --volume $(pwd):/src --rm --name my-gatsby $($img)"
+echo $cmd
+
+exec $cmd
+
