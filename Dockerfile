@@ -1,18 +1,24 @@
 FROM node:7
-MAINTAINER Tiago Henriques <trinosauro@gmail.com>
+MAINTAINER Mat <ultrmat@gmail.com> 
 
 ENV NPM_CONFIG_LOGLEVEL warn
 
+# Install missing packages
+RUN apt-get update && apt install -y \
+  apt-utils \
+  vim
+
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /src
+WORKDIR /src
 
 # Install app dependencies
-COPY package.json /usr/src/app/
+COPY package.json /src
 RUN npm install
 
 # Bundle app source
-COPY . /usr/src/app
+#COPY . /src
+#this happens via volume and git
 
 EXPOSE 8000
 CMD [ "npm", "run", "develop" ]
