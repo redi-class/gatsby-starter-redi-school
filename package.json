@@ -40,7 +40,7 @@
         "build": "gatsby build",
         "start": "list ./public",
         "deploy-gh": "gatsby build --prefix-links && gh-pages -d public",
-        "deploy-now": "now --static ./public/ --name gatsby-starter-redi-school",
+        "deploy-now": "gatsby build && now --static ./public/ --name gatsby-starter-redi-school",
         "develop": "gatsby develop",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
