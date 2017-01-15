@@ -1,3 +1,18 @@
 .yellow {
-    background-color: #ff0
+    background-color: #ff0;
+}
+
+html {
+    -webkit-text-size-adjust: 100% !important;
+}
+
+body {
+    font-family: georgia, palatino, "book antiqua", "palatino linotype", serif !important;
+    font-weight: normal !important;
+}
+
+.Button,
+.NavItem {
+    font-family: helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif !important;
+    font-weight: normal !important;
 }
