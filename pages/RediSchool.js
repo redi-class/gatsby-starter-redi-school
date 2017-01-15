@@ -51,8 +51,9 @@ export default () => (
             </NavItem>
         </Toolbar>
         <Banner
-            backgroundImage='/static/redi-school-hero-image-206b5b_cea26d3ad6714acf944c096a9cf3d254~mv2.jpg' >
-            <Container m={2} >
+            backgroundImage='/static/redi-school-hero-image-206b5b_cea26d3ad6714acf944c096a9cf3d254~mv2.jpg' 
+        >
+            <Container m={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
                 <Heading
                     level={1}
                     big={true}
