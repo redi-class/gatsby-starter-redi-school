@@ -162,6 +162,7 @@ export default () => (
                     <Divider />
                     <Space auto />
                     <ButtonOutline
+                        color='black'
                         children='CONTACT US'
                         />
                     <Space auto />
