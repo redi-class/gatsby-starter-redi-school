@@ -53,11 +53,11 @@ export default () => (
                 />
             </NavItem>
         </Toolbar>
-        <Container m={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
+        <Container mb={1} p={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
             <Heading
                 my={1}
                 level={1}
-                big={true}
+                big={false}
                 children='This is where your digital career begins'
             />
             <Text
@@ -69,14 +69,12 @@ export default () => (
                 children='APPLY AS A STUDENT'
                 color='black'
             />
-            <Space auto />
         </Container>
         <Banner
             backgroundImage='/static/students/206b5b_fe97cae6fcaf4f44a596c33b9ac07758~mv2_d_4288_2848_s_4_2.jpg'
         >
         </Banner>
-        <Container m={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
-
+        <Container mt={1} p={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
             <Heading
                 level={1}
                 children='HOW CAN I APPLY?'
@@ -84,7 +82,7 @@ export default () => (
             />
             <Flex
                 wrap
-                align='bottom'
+                align='center'
             >
 
                 <Box m={3}>
@@ -133,18 +131,14 @@ export default () => (
             <Flex
                 wrap
                 justify='space-between'
-                align='stretch'
             >
                 <Flex
                     column
-                    align='stretch'
                     style={{
-                        width: 320,
+                        width: 420,
                         minHeight: 384,
                     }}
-
                 >
-                    <Space auto />
                     <Heading level={3} my={1} >
                         DO YOU WANT TO LEARN 21st CENTURY SKILLS?
 ​                    </Heading>
@@ -161,17 +155,18 @@ export default () => (
                     <Heading level={3} my={1} >
                         GET TO KNOW US AT OUR UPCOMING EVENTS!
 ​                    </Heading>
-                    <Space auto />
                     <Divider />
                     <ButtonOutline
                         children='VIEW EVENTS'
                         color='black'
                         m={2}
                     />
-                    <Space auto />
                 </Flex>
                 <Flex column
-                    align='stretch'
+                    style={{
+                        width: 420,
+                        minHeight: 384,
+                    }}
                 >
                     <Heading level={3} my={1}>
                         AM I ELIGIBLE?
@@ -196,32 +191,26 @@ export default () => (
                         children='APPLY AS A STUDENT'
                         color='black'
                     />
-                    <Banner
-                        backgroundImage='/static/students/206b5b_bcca47f7892141a28ac8f742bc45a6bf~mv2_d_4968_3725_s_4_2.jpg'
+                    <Container my={2} p={2} backgroundColor='#777'
                     >
-                        <Space auto />
-                        <Container m={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
-                            <Heading
-                                my={1}
-                                level={1}
-                                big={true}
-                                children='STILL HAVE QUESTIONS?'
-                                color='black'
-                            />
-                            <Text
-                                size={3}
-                                children='Please write an e-mail to Mireia, our Student and Volunteeer Liaison.'
-                                color='black'
-                            />
-                            <Divider />
-                            <ButtonOutline
-                                children='SEND EMAIL'
-                                color='black'
-                            />
-                        </Container>
-                    </Banner>
-
-                    <Space auto />
+                        <img src='/static/students/206b5b_bcca47f7892141a28ac8f742bc45a6bf~mv2_d_4968_3725_s_4_2.jpg' />
+                        <Heading
+                            my={1}
+                            level={3}
+                            children='STILL HAVE QUESTIONS?'
+                            color='black'
+                        />
+                        <Text pb={1}
+                            size={3}
+                            children='Please write an e-mail to Mireia, our Student and Volunteeer Liaison.'
+                            color='black'
+                        />
+                        <Divider />
+                        <ButtonOutline
+                            children='SEND EMAIL'
+                            color='black'
+                        />
+                    </Container>
                 </Flex>
             </Flex>
             <Space auto />
