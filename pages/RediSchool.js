@@ -5,7 +5,7 @@ import 'css/styles.css'
 
 import {
     Banner,
-    Button,
+    ButtonOutline,
     Container,
     Divider,
     Footer,
@@ -51,7 +51,7 @@ export default () => (
             </NavItem>
         </Toolbar>
         <Banner
-            backgroundImage='/static/redi-school-hero-image-206b5b_cea26d3ad6714acf944c096a9cf3d254~mv2.jpg' 
+            backgroundImage='/static/redi-school-hero-image-206b5b_cea26d3ad6714acf944c096a9cf3d254~mv2.jpg'
         >
             <Container m={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
                 <Heading
@@ -63,9 +63,16 @@ export default () => (
                     size={3}
                     children='Using technology to break down barriers and connect the leaders of tomorrow.'
                 />
-                <Button children='APPLY AS A STUDENT' />
+                <ButtonOutline
+                    children='APPLY AS A STUDENT'
+                    color="white"
+                />
                 <Space auto />
-                <Button children='JOIN AS A VOLUNTEER' />
+                <ButtonOutline
+                    children='JOIN AS A VOLUNTEER'
+                    color="white"
+                />
+                <Space />
             </Container>
         </Banner>
         <Container m={2} >
@@ -102,7 +109,9 @@ export default () => (
                     <Space auto />
                     <Divider width={200} />
                     <Space auto />
-                    <Button children='CONTACT US' />
+                    <ButtonOutline
+                        children='CONTACT US'
+                    />
                     <Space auto />
                 </Flex>
             </Flex>
