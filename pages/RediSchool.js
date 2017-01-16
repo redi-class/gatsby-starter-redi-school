@@ -14,6 +14,7 @@ import {
     Space,
     Text,
     Toolbar,
+    Blockquote,
 } from 'rebass'
 
 export default () => (
@@ -115,6 +116,18 @@ export default () => (
                     <Space auto />
                 </Flex>
             </Flex>
+            <Space auto />
+            <Banner
+                backgroundImage='/static/teacher-206b5b_9f4b42eec3df4e628e86334146b5752f~mv2_d_2048_1360_s_2.jpg'
+            >
+                <Blockquote source='Sebastian Probst Eide, Teacher and CTO of a Berlin based Startup'>
+                    Our students are an amazingly talented, resourceful and motivated group. Through this project we help them realize their potential, and give them a clear path into the future. I feel honoured to be allowed to contribute to their growth.
+                </Blockquote>
+            </Banner>
+            <Space auto />
+            <Heading level={2} align='center'>
+                As seen on
+            </Heading>
             <Space auto />
             <Flex wrap justify='space-between' align='center'>
                 <Box p={1}>
