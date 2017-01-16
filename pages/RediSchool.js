@@ -108,7 +108,7 @@ export default () => (
                         CO-CREATE WITH US
                     </Heading>
                     <Space auto />
-                    <Divider width={200} />
+                    <Divider />
                     <Space auto />
                     <ButtonOutline
                         children='CONTACT US'
