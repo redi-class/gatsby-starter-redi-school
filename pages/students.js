@@ -19,12 +19,38 @@ import {
     Toolbar,
 } from 'rebass'
 
+const students = [
+    '206b5b_0a7227d6afce432081345e2a0931fcc0-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_0c84b98931324c4f9508bbc961a7b552-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_0d734257de1a4f56bd4bbc1edf2d8ed5-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_4a4de1310e60428d92c77a8faffd978d-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_7ec596f87bf24b0386ded7792081ca99-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_8ec77312c1c04bcb9652dc65b78e9ed2-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_103fd3666b7a4c3784661a4660b50e78-mv2_d_4968_3725_s_4_2.jpg',
+    '206b5b_407d70d657d64ee3a7ce89471bd0193a-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_626db207fee749039a5ecb81a277ac1d-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_2622bc8ecc7444a08464acf7b82864ab-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_33592c1e71f94b96a2cfb4ab80f6e4e5-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_3037899e1c9f4a818873f7ccda5ed098-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_a2ecaaabd4094817b38545731964570f-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_a9385bc2c5cb48da9a56fbfb9a7a5265-mv2_d_4343_2897_s_4_2.jpg',
+    '206b5b_a46678f2f45245f994c1799156d0f4e4-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_ac7d6073385f4ef0b1bda78ec88025cb-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_b984524801cf4542b9afe6022d7efacc-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_c2771e75b47a40dd912d81620372cd45-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_dca63440c79646b4b1c4fec123ccc4a4-mv2.jpg',
+    '206b5b_e21b746f08f341e597be824a0ca348a1-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_f6ea4a8b0cfa45e3ba19ce89eb116c80-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_f462280c23754412858057815560a5c1-mv2_d_4416_2947_s_4_2.jpg',
+    '206b5b_fa15ba6047a7495f89992df9bd434449-mv2_d_4416_2947_s_4_2.jpg',
+]
+
 export default () => (
     <div>
         <Helmet
             title='ReDI School Students'
         />
-        <Toolbar backgroundColor='#fff' color='#000'>
+        <Toolbar backgroundColor='#fff' color='#000' >
             <NavItem>
                 <img src='/static/redi-school-logo-206b5b_40b9f2073c364120a38c225d5b3dabc8-mv2.jpg'
                     style={{
@@ -219,98 +245,15 @@ export default () => (
             </Heading>
             <Space auto />
             <Flex wrap justify='space-between' align='center'>
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_0a7227d6afce432081345e2a0931fcc0-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_0c84b98931324c4f9508bbc961a7b552-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_0d734257de1a4f56bd4bbc1edf2d8ed5-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_4a4de1310e60428d92c77a8faffd978d-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_7ec596f87bf24b0386ded7792081ca99-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_8ec77312c1c04bcb9652dc65b78e9ed2-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_103fd3666b7a4c3784661a4660b50e78-mv2_d_4968_3725_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_407d70d657d64ee3a7ce89471bd0193a-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_626db207fee749039a5ecb81a277ac1d-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_2622bc8ecc7444a08464acf7b82864ab-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_33592c1e71f94b96a2cfb4ab80f6e4e5-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_3037899e1c9f4a818873f7ccda5ed098-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_a2ecaaabd4094817b38545731964570f-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_a9385bc2c5cb48da9a56fbfb9a7a5265-mv2_d_4343_2897_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_a46678f2f45245f994c1799156d0f4e4-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_ac7d6073385f4ef0b1bda78ec88025cb-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_b984524801cf4542b9afe6022d7efacc-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_c2771e75b47a40dd912d81620372cd45-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_dca63440c79646b4b1c4fec123ccc4a4-mv2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_e21b746f08f341e597be824a0ca348a1-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_f6ea4a8b0cfa45e3ba19ce89eb116c80-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_f462280c23754412858057815560a5c1-mv2_d_4416_2947_s_4_2.jpg'
-                />
-                <Avatar
-                    size={150}
-                    src='/static/students/students/206b5b_fa15ba6047a7495f89992df9bd434449-mv2_d_4416_2947_s_4_2.jpg'
-                />
+                {
+                    students.map((student, idx) => (
+                        <Avatar
+                            key={idx}
+                            size={150}
+                            src={'/static/students/students/' + student}
+                        />
+                    ))
+                }
             </Flex>
         </Container>
         <Footer m={2} >
