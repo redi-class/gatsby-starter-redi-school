@@ -195,12 +195,32 @@ export default () => (
                     <ButtonOutline
                         children='APPLY AS A STUDENT'
                         color='black'
-                        />
-                    <Space auto />
-                    <ButtonOutline
-                        children='SEND EMAIL'
-                        color='black'
-                        />
+                    />
+                    <Banner
+                        backgroundImage='/static/students/206b5b_bcca47f7892141a28ac8f742bc45a6bf~mv2_d_4968_3725_s_4_2.jpg'
+                    >
+                        <Space auto />
+                        <Container m={1} backgroundColor='rgba(127, 127, 127, 0.5)'>
+                            <Heading
+                                my={1}
+                                level={1}
+                                big={true}
+                                children='STILL HAVE QUESTIONS?'
+                                color='black'
+                            />
+                            <Text
+                                size={3}
+                                children='Please write an e-mail to Mireia, our Student and Volunteeer Liaison.'
+                                color='black'
+                            />
+                            <Divider />
+                            <ButtonOutline
+                                children='SEND EMAIL'
+                                color='black'
+                            />
+                        </Container>
+                    </Banner>
+
                     <Space auto />
                 </Flex>
             </Flex>
