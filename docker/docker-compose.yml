@@ -1,0 +1,19 @@
+version: '2'
+services:
+
+  mongo:
+    image: mongo
+    volumes:
+      - "/usr/local/app/gatsby/db:/data/db"
+
+  gatsby:
+    image: gatsby:v4
+    depends_on:
+      - mongo
+    ports:
+      - "8000:8000"
+    links:
+      - mongo:db_1
+    volumes:
+      - "/usr/local/app/gatsby/src:/src"
+    
