@@ -3,6 +3,9 @@ services:
 
   mongo:
     image: mongo
+    # expose to host for visual tool
+    ports:
+      - "27017:27017"
     volumes:
       - "/usr/local/app/gatsby/db:/data/db"
 
